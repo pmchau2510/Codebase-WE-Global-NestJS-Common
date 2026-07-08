@@ -1,0 +1,12 @@
+# Copy thành .npmrc (đã bị gitignore, KHÔNG commit token thật) và điền <GH_TOKEN>.
+#
+# Lấy token: GitHub > Settings > Developer settings > Personal access tokens
+# > Tokens (classic) > Generate new token
+# Scope tối thiểu: write:packages, read:packages (và repo nếu repo là private)
+#
+# File này dùng ở CẢ 2 nơi:
+# 1. Trong Codebase-WE-Global-NestJS-Common (để `npm publish`)
+# 2. Trong WePayment_NodeJs, tại chính thư mục root (để `npm install @pmchau2510/...`)
+
+@pmchau2510:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=<GH_TOKEN>

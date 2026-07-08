@@ -1,0 +1,46 @@
+{
+  "name": "@pmchau2510/nestjs-common",
+  "version": "0.0.1",
+  "description": "Shared/common building blocks for We* NestJS services (decorators, error base classes, and more to come).",
+  "license": "UNLICENSED",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmchau2510/Codebase-WE-Global-NestJS-Common.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=10 <12",
+    "class-transformer": ">=0.5",
+    "class-validator": ">=0.14"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^11.0.1",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.2",
+    "@types/jest": "^29.5.14",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "jest": "^29.7.0",
+    "reflect-metadata": "^0.2.2",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  }
+}
